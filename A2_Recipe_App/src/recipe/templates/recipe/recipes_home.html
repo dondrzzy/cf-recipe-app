@@ -1,7 +1,18 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
-  <title>Bookstore Home</title>
-  <body>
-    Recipes
-  </body>
+   <title>
+       Recipe's Home
+   </title>
+   <body>
+    <h1 style="text-align:center">Welcome to our Recipe App</h1>
+    <br>
+    <ul>
+      <li>
+        <a href="recipes">Recipes</a>
+      </li>
+    </ul>
+    <img src="{% static 'recipe/images/recipe.jpeg' %}" alt="home" width="600" height="300">
+   </body>
 </html>
