@@ -18,7 +18,7 @@ class Recipe(models.Model):
         return str(self.name)
 
     def get_absolute_url(self):
-       return reverse ('recipe:recipes_detail', kwargs={'pk': self.pk})
+       return reverse ('recipes:recipes_detail', kwargs={'pk': self.pk})
 
     def get_difficulty(self):
         difficulty = "Unknown"
